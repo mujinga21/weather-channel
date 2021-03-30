@@ -20,20 +20,25 @@
     <main class="container-fluid">
       <div class="row">
         <aside class="col-sm-3">
-          <div class="input-group input-group-sm mb-3">
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm"
-            />
-            <span class="input-group-text" id="inputGroup-sizing-sm"
-              ><i class="fas fa-search"></i
-            ></span>
+          <div id="search-form">
+            <div class="input-group input-group-sm mb-3">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+                id="search-term"
+              />
+              <span class="input-group-text" id="inputGroup-sizing-sm"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
           </div>
         </aside>
 
-        <section>My results for the search will go here</section>
+        <section class="col-sm-9">
+          My results for the search will go here
+        </section>
       </div>
     </main>
 
