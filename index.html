@@ -30,36 +30,31 @@
                 aria-describedby="inputGroup-sizing-sm"
                 id="search-term"
               />
-              <button class="btn btn-primary" id="fetch-button">
-                Fetch Your User Repos
-              <span class="input-group-text" id="inputGroup-sizing-sm"
+          
+              <span class="input-group-text" id="fetch-button"
                 ><i class="fas fa-search"></i
               ></span>
-            </button>
+        
             </div>
           </div>
         </aside>
 
         <section class="col-sm-9">
             <div class="card">
-
-              <form id="user-form" class="card-body">
-                <div class="menu">
-                  <ul>
-                    <li><a href="#temperature">Temperature</a></li>
-                    <li><a href="#humidity">Humidity</a></li>
-                    <li><a href="#wind speed">Wind Speed</a></li>
-                    <li><a href="#uv index">UV Index</a></li>
-                  </ul>
-                </div>
-        </form>
-      </div>
+              <p class="description " id ="1a"></p>
+              <div id="weather" class="card-body">    
+            </div>
+            <div class="card">
+            <div id="forcast">Five days Forcast:</div>
+            </div>
+          </div>
         </section>
       </div>
       </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
