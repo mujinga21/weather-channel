@@ -20,6 +20,7 @@
     <main class="container-fluid">
       <div class="row">
         <aside class="col-sm-3">
+          <h6>Search for a City</h6>
           <div id="search-form">
             <div class="input-group input-group-sm mb-3">
               <input
@@ -29,16 +30,32 @@
                 aria-describedby="inputGroup-sizing-sm"
                 id="search-term"
               />
+              <button class="btn btn-primary" id="fetch-button">
+                Fetch Your User Repos
               <span class="input-group-text" id="inputGroup-sizing-sm"
                 ><i class="fas fa-search"></i
               ></span>
+            </button>
             </div>
           </div>
         </aside>
 
         <section class="col-sm-9">
-          My results for the search will go here
+            <div class="card">
+
+              <form id="user-form" class="card-body">
+                <div class="menu">
+                  <ul>
+                    <li><a href="#temperature">Temperature</a></li>
+                    <li><a href="#humidity">Humidity</a></li>
+                    <li><a href="#wind speed">Wind Speed</a></li>
+                    <li><a href="#uv index">UV Index</a></li>
+                  </ul>
+                </div>
+        </form>
+      </div>
         </section>
+      </div>
       </div>
     </main>
 

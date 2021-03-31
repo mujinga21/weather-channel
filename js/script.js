@@ -1,4 +1,3 @@
-console.log("hello World");
 // * on first page load
 //     * check local storage for city names
 //     * recall $.getJSON with city
@@ -28,9 +27,34 @@ searchForm.on("click", function (event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+      console.log(data.data[0]);
     });
 });
+var repoList = document.querySelector("ul");
+var fetchButton = document.getElementById("fetch-button");
+
+function getApi() {
+  // replace `octocat` with anyone else's GitHub username
+  var requestUrl =
+    "https://api.openweathermap.org/data/2.5/forecast?q={city name}&appid={802ca1b07e0582315a580a218f0ae4d5}";
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      for (var i = 0; i < data.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = data[i].html_url;
+        repoList.appendChild(listItem);
+      }
+    });
+}
+
+fetchButton.addEventListener("click", getApi);
+
+
+
 
 // var city = "savannah";
 
